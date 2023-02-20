@@ -6,7 +6,7 @@ import Spacer from "./Spacer";
 export default function OffCanvas({show,handleClose,arrayComp,pageName,placement,onClose}) {
   return (
     <div>
-      <Offcanvas show={pageName} onHide={onClose} placement={placement}>
+      <Offcanvas show={pageName} onHide={onClose} placement={placement} scroll={true}>
         <Offcanvas.Header  className="text-end d-flex justify-content-end">
           <Spacer SpacerClassName='py-5'/>
           <IoIosCloseCircleOutline onClick={onClose} size={50} className='pointer'/>

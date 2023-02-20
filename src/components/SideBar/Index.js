@@ -56,7 +56,7 @@ export default function SideBarComp({ active }) {
             className={`${false && "bg-white "}   px-3 py-2  rounded`}
           ></div>
           <div
-            className={`${
+            className={`mb-5 ${
               false ? "bg-white " : "text-white"
             }   ps-2 pe-2 py-2 rounded w-100 fw-normal d-flex align-items-center`}
           >
@@ -68,6 +68,8 @@ export default function SideBarComp({ active }) {
             />
             Log Out
           </div>
+          <Spacer ReUsableStyle={{ height: "10vh" }} />
+
         </div>
       </div>
 
