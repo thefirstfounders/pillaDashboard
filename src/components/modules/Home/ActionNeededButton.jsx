@@ -5,7 +5,7 @@ import { FaChevronRight } from "react-icons/fa";
 
 export default function ActionNeededButton({btnText,icon,btnClassName,btnColor,action}) {
   return (
-    <div className="col-lg-6">
+    <div className="col-lg-6 mb-3 mb-lg-0">
       <ButtonComp
       onClick ={action}
         btnStyle={{ border: "2px solid #E6E6E6" }}

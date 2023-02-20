@@ -81,4 +81,15 @@ position:relative;
 
 }
 
+@media only screen and (max-width: 600px) {
+  .main{
+    margin-left:0px;
+}
+.side{
+  
+  width:0;
+  
+}
+}
+
 `

@@ -47,7 +47,7 @@ export default function HomeComp() {
         </div>
       </section>
 
-      <section className="mb-5">
+      <section className="">
         <h5 className="fw-bold mb-4">Merchants Categories</h5>
         <div className="row gx-5">
           {MerchantsCategoriesData()?.map(({ name }, index) => (
