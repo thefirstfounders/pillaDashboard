@@ -3,39 +3,52 @@ import { RiErrorWarningFill } from "react-icons/ri"
 export const SideBarData = [
     {
         name:'Home',
-        icon1:'',
-        icon2:'/Images/SideBar/home.svg',
-        activeNo:1
+        icon1:'/Images/SideBar/home.svg',
+        icon2:'/Images/SideBar/homea.svg',
+        activeNo:1,
+        path:'/'
     },
     {
         name:'Pilla Card',
-        icon1:'',
-        icon2:'/Images/SideBar/1.png'
+        icon1:'/Images/SideBar/2a.svg',
+        icon2:'/Images/SideBar/1.png',
+        activeNo:2,
+        path:'/'
     },
     {
         name:'Pilla Savings',
-        icon1:'',
-        icon2:'/Images/SideBar/2.png'
+        icon1:'/Images/SideBar/2a.svg',
+        icon2:'/Images/SideBar/2.png',
+        activeNo:3,
+        path:'/savings'
     },
     {
         name:'Pilla Finance',
-        icon1:'',
-        icon2:'/Images/SideBar/3.svg'
+        icon1:'/Images/SideBar/2a.svg',
+        icon2:'/Images/SideBar/3.svg',
+        activeNo:4,
+        path:'/'
     },
     {
         name:'Pilla Insure',
-        icon1:'',
-        icon2:'/Images/SideBar/4.svg'
+        icon1:'/Images/SideBar/2a.svg',
+        icon2:'/Images/SideBar/4.svg',
+        activeNo:5,
+        path:'/'
     },
     {
         name:'Pilla Crypto',
-        icon1:'',
-        icon2:'/Images/SideBar/5.svg'
+        icon1:'/Images/SideBar/2a.svg',
+        icon2:'/Images/SideBar/5.svg',
+        activeNo:6,
+        path:'/'
     },
     {
         name:'Profile',
-        icon1:'',
-        icon2:'/Images/SideBar/6.svg'
+        icon1:'/Images/SideBar/2a.svg',
+        icon2:'/Images/SideBar/6.svg',
+        activeNo:7,
+        path:'/'
     },
     
 ]

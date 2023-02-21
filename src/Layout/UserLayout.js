@@ -33,7 +33,7 @@ export default function UserLayout({ title,active, children }) {
               height={35}
               />
             </div>
-            <div className="min-vh-100 px-3 pt-3 px-lg-5 pt-lg-5">{children}</div>
+            <div className="min-vh-100 px-3 pt-3 px-lg-5 pt-lg-5 animate__fadeIn animate__animated">{children}</div>
           </div>
         </UserLayoutStyled>
         </ProSidebarProvider>

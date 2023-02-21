@@ -4,6 +4,7 @@ import FallbackImage from "../Common/ImageWrapper";
 import Spacer from "../Common/Spacer";
 import { BsHouse, BsHouseDoor, BsHouseDoorFill } from "react-icons/bs";
 import { SideBarData } from "@/utils/data";
+import Link from "next/link";
 export default function SideBarComp({ active }) {
   return (
     <div>
@@ -16,7 +17,8 @@ export default function SideBarComp({ active }) {
         <div className="d-flex ">
           <div className="ms-3 ps-1"></div>
           <ul className="list-unstyled  w-100 me-3 me-lg-4 p-0">
-            {SideBarData?.map(({ name, icon1, icon2, activeNo }, index) => (
+            {SideBarData?.map(({ name, icon1, icon2, activeNo,path }, index) => (
+            <Link key={index} href={path} className='text-decoration-none'>
               <li
                 className="text-black d-flex align-items-center pointer mb-4 font-1"
                 key={index}
@@ -28,23 +30,24 @@ export default function SideBarComp({ active }) {
                     marginRight: "15px",
                   }}
                   className={`${
-                    active === activeNo && "bg-white "
+                    active === activeNo && "bg-white animate__fadeInLeft animate__animated animate__delay-1s animate__faster"
                   }   py-2  rounded`}
                 ></div>
                 <div
                   className={`${
-                    active === activeNo ? "bg-white " : "text-white"
+                    active === activeNo ? "bg-white animate__fadeInLeft animate__animated" : "text-white"
                   }   ps-2 pe-2 py-2 rounded w-100 fw-normal d-flex align-items-center`}
                 >
                   <FallbackImage
                     width={24}
                     height={24}
-                    src={icon1 || icon2}
+                    src={ active === activeNo?icon1:icon2}
                     className="me-3"
                   />
-                  {name}
+                  <span className="">{name}</span>
                 </div>
               </li>
+            </Link>
             ))}
           </ul>
         </div>

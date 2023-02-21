@@ -3,7 +3,9 @@
 
 /* Roots */
 :root{
+  --primary:#00AA96;
  --danger:#FF0421;
+ --gray:#999999;
 }
 
 body{
@@ -13,6 +15,13 @@ body{
 h1,h2,h3,h4,h5,h6{
   font-family: "Space Grotesk", sans-serif !important;
 
+}
+
+
+/* font Size Config */
+
+.h6tt{
+  font-size: 13px;
 }
 
 /* Fonts Config */
@@ -49,3 +58,22 @@ h1,h2,h3,h4,h5,h6{
 .danger{
   color: var(--danger);
 }
+.gray{
+  color: var(--gray);
+}
+
+/* Background Color */
+
+.primaryI{
+  background-color: var(--primary) !important;
+}
+
+
+/*  */
+
+.offcanvas, .offcanvas-lg, .offcanvas-md, .offcanvas-sm, .offcanvas-xl, .offcanvas-xxl {
+
+  --bs-offcanvas-width: 420px !important;
+border: none !important;
+}
+
