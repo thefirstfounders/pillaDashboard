@@ -9,7 +9,7 @@ export default function SideBarComp({ active }) {
   return (
     <div>
       <Spacer SpacerClassName="py-4" />
-      <div className="text-center">
+      <div className="text-center" style={{position:'sticky',top:'20px'}}>
         <FallbackImage src="/Images/SideBar/logo.png" width={153} height={47} />
       </div>
       <Spacer SpacerClassName="py-5" />
