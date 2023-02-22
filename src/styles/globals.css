@@ -6,6 +6,9 @@
   --primary:#00AA96;
  --danger:#FF0421;
  --gray:#999999;
+ --black:#00061A;
+ --blackI:#1A1A1A;
+ --dark:#2D2D3D;
 }
 
 body{
@@ -20,9 +23,13 @@ h1,h2,h3,h4,h5,h6{
 
 /* font Size Config */
 
+.h5t{
+  font-size: 16px;
+}
 .h6tt{
   font-size: 13px;
 }
+
 
 /* Fonts Config */
 
@@ -61,6 +68,15 @@ h1,h2,h3,h4,h5,h6{
 .gray{
   color: var(--gray);
 }
+.black{
+  color: var(--black);
+}
+.blackI{
+  color: var(--blackI);
+}
+.dark{
+  color: var(--dark);
+}
 
 /* Background Color */
 
@@ -77,3 +93,18 @@ h1,h2,h3,h4,h5,h6{
 border: none !important;
 }
 
+.offcanvas-backdrop {
+background-color: #9EA1AF !important;
+}
+
+/* Custom */
+
+.py-4t {
+  padding-top: 1.8rem!important;
+  padding-bottom: 1.8rem!important;
+}
+
+/* Font-weight */
+.fw-1{
+  font-weight: 500 !important;
+}

@@ -3,7 +3,7 @@ import { Offcanvas } from "react-bootstrap";
 import {IoCloseCircleOutline, IoIosCloseCircleOutline} from 'react-icons/io'
 import Spacer from "./Spacer";
 
-export default function OffCanvas({show,handleClose,arrayComp,pageName,placement,onClose}) {
+export default function OffCanvas({show,arrayComp,pageName,placement,onClose}) {
   return (
     <div>
       <Offcanvas show={pageName} onHide={onClose} placement={placement} scroll={true} >

@@ -36,6 +36,7 @@ const OtpCompStyled = styled.div`
     color: $dark;
     width: 3rem !important;
     margin: 0 .5rem;
+    flex-shrink: 1;
 
     &:focus {
       border-color: #00CCB4 !important;
@@ -49,6 +50,13 @@ const OtpCompStyled = styled.div`
       &:focus {
         box-shadow: 0 0 0 0.2rem rgba($red,.25);
       }
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .otp-code__input {
+     
+      width: 2.5rem !important;
+     
     }
   }
 `;

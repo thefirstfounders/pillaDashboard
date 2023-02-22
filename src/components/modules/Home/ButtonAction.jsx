@@ -2,11 +2,12 @@ import FallbackImage from "@/components/Common/ImageWrapper";
 import ButtonComp from "@/components/Ui/Button";
 import React from "react";
 
-export default function ButtonAction({ btnText, Image }) {
+export default function ButtonAction({ btnText,onClick, Image,btnWrapper,BtnActionStyle }) {
   return (
-    <div className="col-6 col-lg-3">
+    <div className={`${btnWrapper || 'col-6 col-lg-3'}`}>
       <ButtonComp
-        btnStyle={{ border: "2px solid #E6E6E6" }}
+      onClick={onClick}
+        btnStyle={{ border: "2px solid #E6E6E6",...BtnActionStyle }}
         btnClassName={"bg-white w-100 py-3 rounded1"}
         btnText={
           <span className="d-flex justify-content-center  mx-lg-3">

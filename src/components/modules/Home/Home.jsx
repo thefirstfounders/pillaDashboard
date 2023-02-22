@@ -1,7 +1,5 @@
-import FallbackImage from "@/components/Common/ImageWrapper";
 import OffCanvas from "@/components/Common/OffCanvas";
-import OtpComp from "@/components/Common/OptCodeComp";
-import Spacer from "@/components/Common/Spacer";
+import { TableCompData } from "@/components/Common/TableComp";
 import ButtonComp from "@/components/Ui/Button";
 import {
   ActionNeededButtonData,
@@ -9,11 +7,13 @@ import {
   HomeBannerData,
   MerchantsCategoriesData,
 } from "@/utils/data";
+import { RecentTransactionsData, RecentTransactionsHeader } from "@/utils/TableColumns";
 import React from "react";
 import { useState } from "react";
 import ActionNeededButton from "./ActionNeededButton";
 import Banner from "./Banner";
 import ButtonAction from "./ButtonAction";
+import Message from "./Message";
 import VerificationStatus from "./VerificationStatus";
 
 export default function HomeComp() {
@@ -43,27 +43,13 @@ export default function HomeComp() {
       },
       {
         name:'Message',
-        component:<div className="text-center">
-            <h4 className="text-center fw-bold mb-5">PIN Creatr</h4>
-            <Spacer SpacerClassName='py-2'/>
-            <div className="text-center mb-3">
-              <FallbackImage
-              src='/Images/Icon/success.svg'
-              width={74}
-              height={74}
-              />
-            </div>
-            <p className="mb-5">You are secured</p>
-            <ButtonComp
-          btnStyle={{backgroundColor:'#1A1A1A'}}
-          btnText={<h4 className="mb-0 fw-bold">Done</h4>}
-          btnClassName='w-100 text-center  rounded text-white py-2'
-          />
-        </div>
+        component:<Message/>
+        
       },
     ]
+
   return (
-    <>
+    <main className="pb-5">
       <section className="mb-5">
         <div className="row">
           {HomeBannerData()?.map((item, i) => (
@@ -96,7 +82,7 @@ export default function HomeComp() {
         </div>
       </section>
 
-      <section className="">
+      <section className="mb-5">
         <h5 className="fw-bold mb-4">Merchants Categories</h5>
         <div className="row gx-5">
           {MerchantsCategoriesData()?.map(({ name }, index) => (
@@ -105,8 +91,25 @@ export default function HomeComp() {
         </div>
       </section>
 
+      <section className="">
+        <div className="d-flex justify-content-between">
+        <h5 className="fw-bold mb-4">Recent Transactions</h5>
+        <ButtonComp
+        btnText={'See all'}
+        btnClassName='font-1 fw-bold'
+        />
+        </div>
+       
+        <div className="card px-4 border-0">
+          <div className="card-body">
+          <TableCompData data={RecentTransactionsData} columns={RecentTransactionsHeader()} marginBottom='10px'/>
+
+          </div>
+        </div>
+      </section>
+
       <OffCanvas pageName={pageName} arrayComp={useOffCanvasPage} placement='end' onClose={()=>setPageName()}/>
 
-    </>
+    </main>
   );
 }
