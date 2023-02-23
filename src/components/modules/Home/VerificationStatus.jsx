@@ -3,7 +3,7 @@ import Spacer from '@/components/Common/Spacer'
 import ButtonComp from '@/components/Ui/Button'
 import React from 'react'
 
-export default function VerificationStatus({title,desc,otpData,setOpt,onNext}) {
+export default function VerificationStatus({title,desc,otpData,setOpt,onNext,btnText}) {
   return (
     <div>
           <div className="mb-4">
@@ -15,7 +15,7 @@ export default function VerificationStatus({title,desc,otpData,setOpt,onNext}) {
           <Spacer SpacerClassName='py-4' />
           <ButtonComp
           onClick={onNext}
-          btnText={<h4 className="mb-0 fw-bold">Proceed</h4>}
+          btnText={<h4 className="mb-0 fw-bold">{btnText||'Proceed'}</h4>}
           btnClassName='w-100 text-center primaryI rounded text-white py-2'
           />
         </div>

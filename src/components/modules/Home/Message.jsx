@@ -3,10 +3,10 @@ import Spacer from '@/components/Common/Spacer'
 import ButtonComp from '@/components/Ui/Button'
 import React from 'react'
 
-export default function Message() {
+export default function Message({title='PIN Creatr',desc='You are secured',btnBG='#1A1A1A'}) {
   return (
     <div className="text-center">
-            <h4 className="text-center fw-bold mb-5">PIN Creatr</h4>
+            <h4 className="text-center fw-bold mb-5">{title}</h4>
             <Spacer SpacerClassName='py-2'/>
             <div className="text-center mb-3">
               <FallbackImage
@@ -15,9 +15,9 @@ export default function Message() {
               height={74}
               />
             </div>
-            <p className="mb-5">You are secured</p>
+            <p className="mb-5">{desc}</p>
             <ButtonComp
-          btnStyle={{backgroundColor:'#1A1A1A'}}
+          btnStyle={{backgroundColor:btnBG}}
           btnText={<h4 className="mb-0 fw-bold">Done</h4>}
           btnClassName='w-100 text-center  rounded text-white py-2'
           />

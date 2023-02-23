@@ -1,14 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;700&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
 
 /* Roots */
 :root{
   --primary:#00AA96;
+  --primaryIII:#009987;
+  --primaryI:#E5FFFC;
  --danger:#FF0421;
  --gray:#999999;
+ --grayI:#606060;
+ --grayII:#4D4D4D;
+ --grayIII:#F2F2F2;
+ --grayIV:#666666;
  --black:#00061A;
  --blackI:#1A1A1A;
+ --blackII:#333333;
  --dark:#2D2D3D;
+ --success:#159F00;
 }
 
 body{
@@ -20,14 +28,30 @@ h1,h2,h3,h4,h5,h6{
 
 }
 
+input{
+  outline: none !important;
+  box-shadow: none !important;
+}
 
 /* font Size Config */
 
+.h3t{
+  font-size: 20px !important;
+}
+.h4t{
+  font-size: 18px;
+}
 .h5t{
   font-size: 16px;
 }
+.h5tt{
+  font-size: 14px !important;
+}
 .h6tt{
   font-size: 13px;
+}
+.h7{
+  font-size: 10px;
 }
 
 
@@ -43,6 +67,9 @@ h1,h2,h3,h4,h5,h6{
 
 .font-3 {
   font-family: "Poppins", sans-serif !important;
+}
+.font-4 {
+  font-family: 'Manrope', sans-serif !important;
 }
 
 /* Utils */
@@ -66,7 +93,16 @@ h1,h2,h3,h4,h5,h6{
   color: var(--danger);
 }
 .gray{
-  color: var(--gray);
+  color: var(--gray) !important;
+}
+.grayI{
+  color: var(--grayI);
+}
+.grayII{
+  color: var(--grayII);
+}
+.grayIV{
+  color: var(--grayIV);
 }
 .black{
   color: var(--black);
@@ -74,8 +110,20 @@ h1,h2,h3,h4,h5,h6{
 .blackI{
   color: var(--blackI);
 }
+.blackII{
+  color: var(--blackII);
+}
 .dark{
   color: var(--dark);
+}
+.primary{
+  color: var(--primary);
+}
+.primaryIII{
+  color: var(--primaryIII);
+}
+.success{
+  color: var(--success);
 }
 
 /* Background Color */
@@ -83,13 +131,22 @@ h1,h2,h3,h4,h5,h6{
 .primaryI{
   background-color: var(--primary) !important;
 }
+.primaryII{
+  background-color: var(--primaryI) !important;
+}
+.bg-garyI{
+  background-color: var(--gray) !important;
+}
+.bg-grayIII{
+  background-color: var(--grayIII) !important;
+}
 
 
 /*  */
 
 .offcanvas, .offcanvas-lg, .offcanvas-md, .offcanvas-sm, .offcanvas-xl, .offcanvas-xxl {
 
-  --bs-offcanvas-width: 420px !important;
+  --bs-offcanvas-width: 450px !important;
 border: none !important;
 }
 
@@ -107,4 +164,40 @@ background-color: #9EA1AF !important;
 /* Font-weight */
 .fw-1{
   font-weight: 500 !important;
+}
+
+
+/* Border */
+
+.borderColorI{
+  border: 1px solid #F7F7F7 !important;
+  border-right: none !important;
+  border-left: none !important;
+  border-bottom: none !important;
+}
+.borderGeneral{
+  border: 1px solid #E6E6E6;
+  border-radius: 12px;
+}
+/* .borderHorzontial {
+  border-top: ;
+} */
+
+/* RentSavingPageBox */
+
+.RentSavingPageBox{
+  border-bottom: 1px solid #F2F2F2;
+box-shadow: 3px 4px 19px rgba(118, 118, 122, 0.05);
+border-radius: 4px;
+}
+
+
+@media only screen and (max-width: 500px) {
+  p{
+    font-size: 14px !important;
+  }
+
+  .h3t{
+    font-size: 18px !important;
+  }
 }

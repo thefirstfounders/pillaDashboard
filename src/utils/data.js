@@ -13,7 +13,7 @@ export const SideBarData = [
         icon1:'/Images/SideBar/2a.svg',
         icon2:'/Images/SideBar/1.png',
         activeNo:2,
-        path:'/'
+        path:'/card'
     },
     {
         name:'Pilla Savings',

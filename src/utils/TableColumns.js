@@ -52,6 +52,46 @@ export const RecentTransactionsHeader=(TableDropDown)=>{
       ];
   }
 
+  export const TransactionsHeader=(TableDropDown)=>{
+
+    return [
+        {
+          name: "Date",
+          selector: (row) => <div className='d-flex align-items-center'>
+            
+               
+          </div>,
+        
+        },
+        {
+          name: <div>Amount</div>,
+          selector: (row) => <div className="black">
+           <h6 className="mb-0 font-2 fw-normal">{row?.date}</h6>
+          </div>,
+        //   width:'230px'
+        },
+        {
+          name: "Description",
+          selector: (row) => <div className="">
+              <h6 className="mb-0 font-2 fw-normal">{row?.status}</h6>
+          </div>,
+        },
+        {
+          name: "Balance",
+          selector: (row) => <div className={`${row?.status.toLowerCase() ==="debit"?"text-danger":"text-success"}`}>
+             <h5 className="fw-bold  text-start">{row?.amount}</h5>
+          </div>,
+        },
+     
+         
+      ];
+  }
+
+  export const Data1 =[
+    {
+      date:''
+    }
+  ]
 
   export const RecentTransactionsData = [
     {

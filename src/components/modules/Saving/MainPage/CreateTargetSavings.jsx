@@ -1,8 +1,8 @@
 import FallbackImage from "@/components/Common/ImageWrapper";
 import React from "react";
-import ActionNeededButton from "../Home/ActionNeededButton";
+import ActionNeededButton from "../../Home/ActionNeededButton";
 
-export default function CreateTargetSavings({setPageName,pageName}) {
+export default function CreateTargetSavings({setPageName,pageName,onNext}) {
   return (
     <div>
       <div className="mb-4">
@@ -31,6 +31,9 @@ export default function CreateTargetSavings({setPageName,pageName}) {
       </div>
       <div>
         <ActionNeededButton
+          action={()=>{
+            onNext()
+          }}
           ActionNeededButtonStyle={{
             borderColor: "#F2F2F",
             borderWidth: "1px",
