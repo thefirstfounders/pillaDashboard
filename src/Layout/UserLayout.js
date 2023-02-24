@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import SideBarComp from "@/components/SideBar/Index";import {ProSidebarProvider} from 'react-pro-sidebar'
 import styled from 'styled-components'
 import FallbackImage from "@/components/Common/ImageWrapper";
-export default function UserLayout({ title,active, children }) {
+export default function UserLayout({ title='',active, children }) {
   return (
     <div>
       <Head>

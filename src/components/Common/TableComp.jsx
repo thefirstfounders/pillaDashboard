@@ -16,11 +16,12 @@ export const TableCompData = ({
   progressPending = false,
   setIsSelected = {},
   message,
-  marginBottom
+  marginBottom,
+  noHeader=false
 }) => {
   
   return (
-    <Style MarginBottom={marginBottom}>
+    <Style MarginBottom={marginBottom} showHeader={noHeader}>
       
         <DataTable
           responsive={true}
@@ -33,7 +34,8 @@ export const TableCompData = ({
           // // onSelectedRowsChange={handleRowSelected}
           selectableRows={selectableRows ? true : false}
           progressPending={progressPending}
-          noHeader={false}
+          pointerOnHover
+          noHeader={true}
           
           persistTableHead={false}
           noDataComponent={message?message:false}
@@ -51,13 +53,16 @@ const Style = styled.div`
 
  
   .rdt_TableHeadRow {
-    font-size: 15px !important;
-    color: #fff;
+    font-size: 12px !important;
+    color: #000;
     font-weight: 600;
-    background:#8B313A;
-    border-start-end-radius: 10px;
-    border-start-start-radius: 10px;
-   display:none
+    background:#F2F2F2;
+     border-start-end-radius: 10px;
+     border-start-start-radius: 10px;
+    border-bottom:none;
+    font-family: "Space Grotesk", sans-serif !important;
+    display: ${props=>props?.showHeader?'flex':'none'};
+    justify-content:between;
   }
   
    .rdt_TableBody{
@@ -66,12 +71,15 @@ const Style = styled.div`
    }
   .rdt_TableCell{
     border:none;
-    padding:10px;
+    padding-top:10px;
     font-size: 14px !important;
+    white-space:break-spaces !important;
   }
   .rdt_TableRow{
     padding:15px 0px;
-    font-size: 14px !important;
+    font-size: 13px !important;
     // border:1px solid red;
+    color:#1A1A1A;
+    
   }
 `;

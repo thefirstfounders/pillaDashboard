@@ -3,7 +3,7 @@ import Spacer from '@/components/Common/Spacer'
 import ButtonComp from '@/components/Ui/Button'
 import React from 'react'
 
-export default function Message({title='PIN Creatr',desc='You are secured',btnBG='#1A1A1A'}) {
+export default function Message({title='PIN Creatr',desc='You are secured',btnBG='#1A1A1A',onNext}) {
   return (
     <div className="text-center">
             <h4 className="text-center fw-bold mb-5">{title}</h4>
@@ -17,6 +17,7 @@ export default function Message({title='PIN Creatr',desc='You are secured',btnBG
             </div>
             <p className="mb-5">{desc}</p>
             <ButtonComp
+            onClick={typeof onNext ==="function" && onNext}
           btnStyle={{backgroundColor:btnBG}}
           btnText={<h4 className="mb-0 fw-bold">Done</h4>}
           btnClassName='w-100 text-center  rounded text-white py-2'

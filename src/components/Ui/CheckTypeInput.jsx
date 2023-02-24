@@ -2,11 +2,11 @@ import React from 'react'
 import { Form } from 'react-bootstrap'
 import styled from 'styled-components'
 
-export default function CheckTypeInput({size,CheckTypeInputClassName,name,type='checkbox'}) {
+export default function CheckTypeInput({size,CheckTypeInputClassName,name,type='checkbox',checked}) {
   return (
     <CheckTypeInputStyled Size={size}>
          <Form.Group className="" controlId="formBasicCheckbox">
-        <Form.Check type={type} name={name} className={CheckTypeInputClassName}/>
+        <Form.Check type={type} name={name} className={CheckTypeInputClassName} checked={checked}/>
       </Form.Group>
     </CheckTypeInputStyled>
   )

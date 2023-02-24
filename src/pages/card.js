@@ -4,7 +4,7 @@ import React from 'react'
 
 export default function Card() {
   return (
-    <UserLayout active={2}>
+    <UserLayout title='Pilla Card' active={2}>
         <Pilla_Card/>
     </UserLayout>
   )

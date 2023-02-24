@@ -53,13 +53,14 @@ export const SideBarData = [
     
 ]
 
-export const HomeBannerData =()=>{
+export const HomeBannerData =(setPageName)=>{
    return [
     {
         title:'Available Balance',
         amount:'',
         color:'#FFFFFF',
-        bg:'#020202'
+        bg:'#020202',
+        
     },
     {
         title:'Pilla Finance',
@@ -114,10 +115,10 @@ export const ActionNeededButtonData =(setPageName) =>{
         {
             name:'Verification Status',
             icon:<RiErrorWarningFill color="red" size={30} className="me-2" />,
-            action:()=>{setPageName('Verification_Status')}
+            action:()=>{setPageName('Get started with Pilla')}
         },
         {
-            name:'Set Transactin Pin',
+            name:'Set Transaction Pin',
             icon:<RiErrorWarningFill color="red" size={30} className="me-2" />,
             action:()=>{setPageName('Verification_Status')}
         },
