@@ -17,7 +17,7 @@ export default function OtpComp({ otpData, setOtp }) {
         shouldAutoFocus={true}
         value={otpData}
         onChange={(e) => setOtp(e)}
-        numInputs={6}
+        numInputs={4}
         // separator={<span>-</span>}
       />
     </OtpCompStyled>

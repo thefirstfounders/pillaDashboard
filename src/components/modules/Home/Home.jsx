@@ -21,6 +21,7 @@ import { GetStartedWithPillaData } from "./Data";
 import GetStartedWithPillaPage from "./Get started with Pilla";
 import GetStartedWithPillaMain from "./Get started with Pilla";
 import Box from "./Get started with Pilla/Box";
+import BuyProperties from "./Get started with Pilla/BuyProperties";
 import Message from "./Message";
 import VerificationStatus from "./VerificationStatus";
 
@@ -56,6 +57,12 @@ export default function HomeComp() {
       name: "Get started with Pilla",
       component: (
         <GetStartedWithPillaPage/>
+      ),
+    },
+    {
+      name: "Buy Properties",
+      component: (
+        <BuyProperties/>
       ),
     },
     {
@@ -114,8 +121,8 @@ export default function HomeComp() {
       <section className="mb-5">
         <h5 className="fw-bold mb-4">Merchants Categories</h5>
         <div className="row gx-5">
-          {MerchantsCategoriesData()?.map(({ name }, index) => (
-            <ActionNeededButton key={index} btnText={name} />
+          {MerchantsCategoriesData(setPageName)?.map(({ name,action }, index) => (
+            <ActionNeededButton key={index} btnText={name} action={action} />
           ))}
         </div>
       </section>
@@ -126,7 +133,7 @@ export default function HomeComp() {
           <ButtonComp btnText={"See all"} btnClassName="font-1 fw-bold" />
         </div>
 
-        <div className="card px-4 border-0">
+        <div className="card px-lg-4 border-0">
           <div className="card-body">
             <TableCompData
               data={RecentTransactionsData}

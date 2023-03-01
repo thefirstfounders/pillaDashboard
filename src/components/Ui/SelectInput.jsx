@@ -16,7 +16,7 @@ export default function SelectInput({
     <TextInputStyled>
       {label && (
         <label
-          className="mb-2 h5t font-2"
+          className="mb-2 h6tt font-2"
           style={{ color: " #333333", fontWeight: "500" }}
         >
           {label || "Target Amount"}
@@ -34,6 +34,7 @@ export default function SelectInput({
         
         }),
       }}
+
         value={selectedOption}
         onChange={handleChange}
         components={animatedComponents}
@@ -46,7 +47,7 @@ export default function SelectInput({
 }
 
 const TextInputStyled = styled.span`
-
+  
 .css-1xc3v61-indicatorContainer{
   color:black;
 }

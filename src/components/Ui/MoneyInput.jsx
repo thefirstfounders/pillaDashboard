@@ -5,7 +5,7 @@ import styled from 'styled-components'
 export default function MoneyInput({placeholder,value,onChange,label}) {
   return (
     <CurrencyInputStyled>
-        <label className='mb-2 h6tt' style={{color:' #333333',fontWeight:'500'}}>{label||'Target Amount'}</label>
+        <label className='mb-2 h6tt font-2' style={{color:' #333333',fontWeight:'500'}}>{label||'Target Amount'}</label>
         <CurrencyInput
     id="input-example"
     name="input-name"

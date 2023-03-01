@@ -6,6 +6,7 @@ import Box from './Box'
 import BVNVerification from './BVNVerification'
 import GetStartedWithPillaMain from './GetStartedWithPillaMain'
 import IdentityVerification from './IdentityVerification'
+import ProofOfAddress from './ProofOfAddress'
 import UploadIDVerification from './UploadIDVerification'
 
 export default function GetStartedWithPillaPage() {
@@ -33,6 +34,13 @@ export default function GetStartedWithPillaPage() {
         {
             name:'Upload ID Verification',
             component:<UploadIDVerification   onNext ={()=>{
+                setPageName('Message')
+                setMessage('Verification Submitted')
+            }}/>
+        },
+        {
+            name:'Proof of address',
+            component:<ProofOfAddress   onNext ={()=>{
                 setPageName('Message')
                 setMessage('Verification Submitted')
             }}/>

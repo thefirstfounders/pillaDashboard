@@ -27,14 +27,14 @@ export const SideBarData = [
         icon1:'/Images/SideBar/2a.svg',
         icon2:'/Images/SideBar/3.svg',
         activeNo:4,
-        path:'/'
+        path:'/finance'
     },
     {
         name:'Pilla Insure',
         icon1:'/Images/SideBar/2a.svg',
         icon2:'/Images/SideBar/4.svg',
         activeNo:5,
-        path:'/'
+        path:'/insure'
     },
     {
         name:'Pilla Crypto',
@@ -48,7 +48,7 @@ export const SideBarData = [
         icon1:'/Images/SideBar/2a.svg',
         icon2:'/Images/SideBar/6.svg',
         activeNo:7,
-        path:'/'
+        path:'/crypto'
     },
     
 ]
@@ -125,10 +125,11 @@ export const ActionNeededButtonData =(setPageName) =>{
     ]
 }
 
-export const MerchantsCategoriesData =() =>{
+export const MerchantsCategoriesData =(setPageName) =>{
     return [
         {
             name:'Buy Property',
+            action:()=>{setPageName('Buy Properties')}
         },
         {
             name:'Property Tax & Government Levies',

@@ -5,6 +5,7 @@
 :root{
   --primary:#00AA96;
   --primaryIII:#009987;
+  --primaryDark:#00332D;
   --primaryI:#E5FFFC;
  --danger:#FF0421;
  --gray:#999999;
@@ -31,6 +32,7 @@ h1,h2,h3,h4,h5,h6{
 input{
   outline: none !important;
   box-shadow: none !important;
+  font-family: "Poppins", sans-serif !important;
 }
 
 /* font Size Config */
@@ -42,7 +44,7 @@ input{
   font-size: 18px;
 }
 .h5t{
-  font-size: 16px;
+  font-size: 16px !important;
 }
 .h5tt{
   font-size: 14px !important;
@@ -125,6 +127,9 @@ input{
 .success{
   color: var(--success);
 }
+.primaryDark{
+  color: var(--primaryDark);
+}
 
 /* Background Color */
 
@@ -139,6 +144,9 @@ input{
 }
 .bg-grayIII{
   background-color: var(--grayIII) !important;
+}
+.bg-blackII{
+  background-color: var(--blackII);
 }
 
 
@@ -187,6 +195,11 @@ background-color: #9EA1AF !important;
 
 .RentSavingPageBox{
   border-bottom: 1px solid #F2F2F2;
+box-shadow: 3px 4px 19px rgba(118, 118, 122, 0.05);
+border-radius: 4px;
+}
+.RentSavingPageBox1{
+  border: 1px solid #F2F2F2;
 box-shadow: 3px 4px 19px rgba(118, 118, 122, 0.05);
 border-radius: 4px;
 }
