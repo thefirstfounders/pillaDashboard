@@ -13,7 +13,7 @@ export default function DatePicker({
     <TextInputStyled>
       {label && (
         <label
-          className="mb-2 h5t font-2"
+          className="mb-2 h6t font-2"
           style={{ color: " #333333", fontWeight: "500" }}
         >
           {label || "Target Amount"}

@@ -8,12 +8,13 @@ export default function TextInput({
   placeholder,
   type,
   label,
+  ...props
 }) {
   return (
     <TextInputStyled>
       {label && (
         <label
-          className="mb-2 h6tt font-2"
+          className="mb-2 h6t font-2"
           style={{ color: " #333333", fontWeight: "500" }}
         >
           {label || "Target Amount"}
@@ -27,9 +28,10 @@ export default function TextInput({
           placeholder={placeholder}
           aria-label="Username"
           aria-describedby="basic-addon1"
+          {...props}
         />
         {suffixIcon && (
-          <InputGroup.Text id="basic-addon1">{suffixIcon}</InputGroup.Text>
+          <InputGroup.Text id="basic-addon1" style={{backgroundColor:'transparent'}}>{suffixIcon}</InputGroup.Text>
         )}
       </InputGroup>
     </TextInputStyled>
@@ -43,5 +45,6 @@ input{
 border-radius: 8px;
 background: #F2F2F2;
 }
+
 
 `;

@@ -16,7 +16,7 @@ export default function SelectInput({
     <TextInputStyled>
       {label && (
         <label
-          className="mb-2 h6tt font-2"
+          className="mb-2 h6t font-2"
           style={{ color: " #333333", fontWeight: "500" }}
         >
           {label || "Target Amount"}
@@ -24,7 +24,7 @@ export default function SelectInput({
       )}
       <Select
        styles={{
-        control: (baseStyles, state) => ({
+        control:(baseStyles, state) => ({
           ...baseStyles,
           borderColor: state.isFocused ? '#E6E6E6' : '#E6E6E6',
           padding:'7px 0px',
