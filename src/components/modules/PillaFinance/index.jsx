@@ -9,6 +9,7 @@ import ButtonAction from "../Home/ButtonAction";
 import ApplyForLoan from "./ApplyForLoan/ApplyforLoan";
 import CheckCredit from "./CheckCredit/CheckCredit";
 import { PillaFinanceData } from "./Data";
+import PayRent from "./PayRent/PayRent";
 
 export default function PillaFinance() {
   const [pageName,setPageName] =useState('');
@@ -21,6 +22,10 @@ export default function PillaFinance() {
     {
       name:'Apply for Loan',
       component:<ApplyForLoan setPageNameMain={()=>setPageName()} />
+    },
+    {
+      name:'Pay Rent',
+      component:<PayRent setPageNameMain={()=>setPageName()} />
     },
   ]
   return (
@@ -95,6 +100,7 @@ export default function PillaFinance() {
             bg={' py-4'}
               BtnActionStyle={{ padding: "15px 0",backgroundColor:'#fff' }}
               // key={index}
+              onClick={()=>setPageName('Pay Rent')}
               btnText={'Pay Rent'}
               Image={'/Images/Icon/arrow-up.png'}
               btnTextClassName='fw-bold'

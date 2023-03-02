@@ -36,7 +36,9 @@ input{
 }
 
 /* font Size Config */
-
+.h1t{
+  font-size: 44px !important;
+}
 .h3t{
   font-size: 20px !important;
 }
@@ -50,7 +52,7 @@ input{
   font-size: 14px !important;
 }
 .h6tt{
-  font-size: 13px;
+  font-size: 13px !important;
 }
 .h7{
   font-size: 10px;
@@ -144,6 +146,9 @@ input{
 }
 .bg-grayIII{
   background-color: var(--grayIII) !important;
+}
+.bg-blackI{
+  background-color: var(--blackI);
 }
 .bg-blackII{
   background-color: var(--blackII);
