@@ -5,7 +5,7 @@ import React from 'react'
 
 export default function Savings() {
   return (
-    <UserLayout active={3}>
+    <UserLayout active={3} pageName={`Pilla Savings`}>
     <Home/>
     </UserLayout>
   )

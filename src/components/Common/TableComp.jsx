@@ -35,7 +35,7 @@ export const TableCompData = ({
           selectableRows={selectableRows ? true : false}
           progressPending={progressPending}
           pointerOnHover
-          noHeader={true}
+          noHeader={noHeader}
           
           persistTableHead={false}
           noDataComponent={message?message:false}
@@ -56,7 +56,7 @@ const Style = styled.div`
     font-size: 12px !important;
     color: #000;
     font-weight: 600;
-    background:#F2F2F2;
+    background:transparent;
      border-start-end-radius: 10px;
      border-start-start-radius: 10px;
     border-bottom:none;
@@ -72,8 +72,9 @@ const Style = styled.div`
   .rdt_TableCell{
     border:none;
     padding-top:10px;
-    font-size: 14px !important;
+    font-size: 13px !important;
     white-space:break-spaces !important;
+    
   }
   .rdt_TableRow{
     padding:15px 0px;

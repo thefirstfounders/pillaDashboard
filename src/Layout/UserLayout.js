@@ -5,7 +5,7 @@ import SideBarComp from "@/components/SideBar/Index";import {ProSidebarProvider}
 import styled from 'styled-components'
 import FallbackImage from "@/components/Common/ImageWrapper";
 import { GiHamburgerMenu } from "react-icons/gi";
-export default function UserLayout({ title='',active, children }) {
+export default function UserLayout({ title='',active, children,pageName='' }) {
   const [sideBarToggle,setSideBarToggle] =useState(false);
   let signUpToggleRef = useRef();
 
@@ -48,7 +48,8 @@ export default function UserLayout({ title='',active, children }) {
           
           <div className="bg-white py-4 text-end px-4 d-flex justify-content-between align-items-center">
           <div>
-            <span ><GiHamburgerMenu  onClick={()=>setSideBarToggle(!sideBarToggle)} size={30} className='pointer'/></span>
+            <div className="d-none d-lg-inline-block h3t fw-semibold blackI">{pageName}</div>
+            <span  className="d-lg-none"><GiHamburgerMenu  onClick={()=>setSideBarToggle(!sideBarToggle)} size={30} className='pointer'/></span>
 
           </div>
               <div className="d-flex justify-content-between align-items-center">
@@ -62,7 +63,7 @@ export default function UserLayout({ title='',active, children }) {
             </div>
           </div>
           
-            <div className="min-vh-100 px-3 pt-3 px-lg-5 pt-lg-5 animate__fadeIn animate__animated">{children}</div>
+            <div className="min-vh-100 px-3 pt-3 px-lg-5 pt-lg-5 animate__fadeIn animate__animated pb-5">{children}</div>
           </div>
         </UserLayoutStyled>
         </ProSidebarProvider>

@@ -4,7 +4,7 @@ import React from 'react'
 
 export default function insure() {
   return (
-    <UserLayout active={5}>
+    <UserLayout active={5} pageName='Insurance'>
         <PillaInsure/>
     </UserLayout>
   )

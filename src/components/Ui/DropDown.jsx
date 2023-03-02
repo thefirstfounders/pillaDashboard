@@ -6,7 +6,7 @@ export default function DropDown({ title, arrayComp,DropDownClassName }) {
   return (
     <DropDownStyled>
       <Dropdown>
-        <Dropdown.Toggle className={`${DropDownClassName} border-0`} variant="" id="dropdown-basic">
+        <Dropdown.Toggle className={` ${DropDownClassName ||'border-0'} `} variant="" id="dropdown-basic">
           {title}<HiOutlineChevronDown/>
         </Dropdown.Toggle>
 

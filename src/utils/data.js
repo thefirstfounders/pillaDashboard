@@ -41,14 +41,14 @@ export const SideBarData = [
         icon1:'/Images/SideBar/2a.svg',
         icon2:'/Images/SideBar/5.svg',
         activeNo:6,
-        path:'/'
+        path:'/crypto'
     },
     {
-        name:'Profile',
+        name:'Settings',
         icon1:'/Images/SideBar/2a.svg',
         icon2:'/Images/SideBar/6.svg',
         activeNo:7,
-        path:'/crypto'
+        path:'/settings'
     },
     
 ]

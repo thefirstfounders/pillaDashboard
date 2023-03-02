@@ -4,7 +4,7 @@ import React from 'react'
 
 export default function finance() {
   return (
-    <UserLayout active={4}>
+    <UserLayout active={4} pageName={`Pilla Finance`}>
         <PillaFinance/>
     </UserLayout>
   )

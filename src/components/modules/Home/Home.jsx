@@ -2,6 +2,7 @@ import FallbackImage from "@/components/Common/ImageWrapper";
 import OffCanvas from "@/components/Common/OffCanvas";
 import { TableCompData } from "@/components/Common/TableComp";
 import ButtonComp from "@/components/Ui/Button";
+import Container from "@/components/Ui/Container";
 import {
   ActionNeededButtonData,
   BtnActionHome,
@@ -135,11 +136,13 @@ export default function HomeComp() {
 
         <div className="card px-lg-4 border-0">
           <div className="card-body">
+            <Container>
             <TableCompData
               data={RecentTransactionsData}
               columns={RecentTransactionsHeader()}
               marginBottom="10px"
             />
+            </Container>
           </div>
         </div>
       </section>

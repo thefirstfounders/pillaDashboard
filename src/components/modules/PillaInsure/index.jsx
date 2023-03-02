@@ -6,33 +6,15 @@ import React, { useState } from "react";
 import { FaChevronRight } from "react-icons/fa";
 import { BuyPropertiesData } from "../Home/Data";
 import { PillaInsureData } from "./Data";
+import PropertyInsurance from "./PropertyInsurance/PropertyInsurance";
 
 export default function PillaInsure() {
-  const [pageName, setPageName] = useState('Property Insurance');
+  const [pageName, setPageName] = useState('');
 
   const useOffCanvas = [
     {
       name: "Property Insurance",
-      component: (
-        <div>
-          <div className="mb-4">
-            <h4 className="fw-bold">Property Insurance</h4>
-            <div className="h6tt gray">insurance that offers property</div>
-          </div>
-          {BuyPropertiesData()?.map(({name,desc},i)=>
-        <div className='RentSavingPageBox1 py-4 px-3 mb-3 pointer' key={i}>
-        <div className='d-flex justify-content-between'>
-            <div>
-            <p className='fw-1 mb-2 h5t'>{name}</p>
-            <div className='h6tt grayIV'>{desc}</div>
-            </div>
-            <div><FaChevronRight/></div>
-        </div>
-       
-    </div>
-        )}
-        </div>
-      ),
+      component: <PropertyInsurance/>
     },
   ];
   return (
@@ -53,7 +35,7 @@ export default function PillaInsure() {
         <div className="row g-4">
           {PillaInsureData(setPageName)?.map(
             ({ image, action, name, desc }, i) => (
-              <div className="col-md-6 col-lg-3  " key={i}>
+              <div className="col-md-6 col-lg-4 col-xl-3  " key={i}>
                 <Container Wrapper={"h-100"}>
                   <div className="mb-3">
                     <FallbackImage src={image} width={79} height={100} />

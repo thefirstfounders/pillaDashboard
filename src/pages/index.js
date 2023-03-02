@@ -9,7 +9,7 @@ import HomeComp from '@/components/modules/Home/Home'
 export default function Home() {
 
   return (
-    <UserLayout title='Home' active={1}>
+    <UserLayout title='Home' active={1} pageName={`Home`}>
         <HomeComp/>
     </UserLayout>
   )
