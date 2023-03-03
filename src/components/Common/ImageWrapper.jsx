@@ -2,7 +2,7 @@ import Image from 'next/image'
 import React, {useState, useEffect} from 'react'
 
 
-const FallbackImage = (props) => {
+const FallbackImage = (props,defaultImage) => {
   
   const [imgSrc, setImgSrc]  = useState(props.src)
 
@@ -17,7 +17,7 @@ const FallbackImage = (props) => {
       src={imgSrc} 
       alt=""
       style={{objectFit:props?.objectFit||'cover'}}
-      onError={() => {setImgSrc('https://res.cloudinary.com/dammymoses/image/upload/v1654672815/avatars/avatar_wv2acz.svg')}}
+      onError={() => {setImgSrc(defaultImage||'https://res.cloudinary.com/dammymoses/image/upload/v1654672815/avatars/avatar_wv2acz.svg')}}
     />
    
   )

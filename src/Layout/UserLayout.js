@@ -48,7 +48,7 @@ export default function UserLayout({ title='',active, children,pageName='' }) {
           
           <div className="bg-white py-4 text-end px-4 d-flex justify-content-between align-items-center">
           <div>
-            <div className="d-none d-lg-inline-block h3t fw-semibold blackI">{pageName}</div>
+            <div className="d-none d-lg-inline-block h3t fw-semibold blackI font-3">{pageName}</div>
             <span  className="d-lg-none"><GiHamburgerMenu  onClick={()=>setSideBarToggle(!sideBarToggle)} size={30} className='pointer'/></span>
 
           </div>

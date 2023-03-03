@@ -16,6 +16,7 @@
  --black:#00061A;
  --blackI:#1A1A1A;
  --blackII:#333333;
+ --blackIV:#0D0D0D;
  --dark:#2D2D3D;
  --success:#159F00;
  --pending:#00AA96;
@@ -118,6 +119,9 @@ input{
 }
 .blackII{
   color: var(--blackII);
+}
+.blackIV{
+  color: var(--blackIV);
 }
 .dark{
   color: var(--dark);
