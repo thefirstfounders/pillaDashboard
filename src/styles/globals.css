@@ -19,6 +19,7 @@
  --blackIV:#0D0D0D;
  --dark:#2D2D3D;
  --success:#159F00;
+ --successI:#0FBE00;
  --pending:#00AA96;
 }
 
@@ -134,6 +135,9 @@ input{
 }
 .success{
   color: var(--success);
+}
+.successI{
+  color: var(--successI);
 }
 .primaryDark{
   color: var(--primaryDark);

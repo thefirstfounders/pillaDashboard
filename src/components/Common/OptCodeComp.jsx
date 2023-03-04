@@ -25,6 +25,9 @@ export default function OtpComp({ otpData, setOtp }) {
 }
 
 const OtpCompStyled = styled.div`
+div{
+  justify-content: center;
+}
 .otp-code__input {
     border-radius: .5rem;
     font-family: monospace;

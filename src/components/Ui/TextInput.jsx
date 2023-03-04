@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import { Form, InputGroup } from "react-bootstrap";
+import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
 import styled from "styled-components";
 
 export default function TextInput({
@@ -10,6 +11,7 @@ export default function TextInput({
   label,
   ...props
 }) {
+  const [isPassword, setIsPassword] = useState(false);
   return (
     <TextInputStyled>
       {label && (
@@ -28,23 +30,37 @@ export default function TextInput({
           placeholder={placeholder}
           aria-label="Username"
           aria-describedby="basic-addon1"
+          type={type==="password"?isPassword?'text':'password':'text'}
           {...props}
         />
-        {suffixIcon && (
-          <InputGroup.Text id="basic-addon1" style={{backgroundColor:'transparent'}}>{suffixIcon}</InputGroup.Text>
-        )}
+        {suffixIcon ||
+          (type === "password" && (
+            <InputGroup.Text
+              id="basic-addon1"
+              style={{ backgroundColor: "transparent" }}
+              onClick={()=>setIsPassword(!isPassword)}
+            >
+              {type === "password" ? (
+                isPassword ? (
+                  <AiOutlineEye size={25} />
+                ) : (
+                  <AiOutlineEyeInvisible size={25} />
+                )
+              ) : (
+                suffixIcon
+              )}
+            </InputGroup.Text>
+          ))}
       </InputGroup>
     </TextInputStyled>
   );
 }
 
 const TextInputStyled = styled.span`
-input{
+  input {
     padding: 12px 16px;
-    border: 1px solid #E6E6E6;
-border-radius: 8px;
-background: #F2F2F2;
-}
-
-
+    border: 1px solid #e6e6e6;
+    border-radius: 8px;
+    background: #f2f2f2;
+  }
 `;

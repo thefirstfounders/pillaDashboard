@@ -7,10 +7,12 @@ export const SettingData = () => {
 
     {
       name: "Account Limit",
+      titleName:'Current level: Tier 1',
       action: () => {},
     },
     {
       name: "Notifications",
+      titleName:'Notification Settings',
       action: () => {},
     },
     {
@@ -19,6 +21,7 @@ export const SettingData = () => {
     },
     {
       name: "Saved Cards",
+      titleName:'My Cards',
       action: () => {},
     },
     {

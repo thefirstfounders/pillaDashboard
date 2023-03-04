@@ -1,12 +1,12 @@
 import React from "react";
 
-export default function ShowDetails({ label, name }) {
+export default function ShowDetails({ label, name,labelClassName,nameClassName,ShowBorder}) {
   return (
     <div
-      className={`row font-2 align-items-center pt-3 pb-2 ps-md-4   border-bottom mb-2`}
+      className={`row font-2 align-items-center       ${ShowBorder?ShowBorder:'border-bottom ps-md-4 mb-2 pb-2 pt-3 '}`}
     >
-      <div className="col-md-4 h5t grayIV">{label}</div>
-      <div className="col-md-8 h5t blackI">{name}</div>
+      <div className={` ${labelClassName||'h5t grayIV col-md-4'} `}>{label}</div>
+      <div className={` ${nameClassName||`h5t blackI col-md-8`}`}>{name}</div>
     </div>
   );
 }
