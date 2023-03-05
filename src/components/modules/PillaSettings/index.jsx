@@ -8,7 +8,9 @@ import { SettingData } from "./Data";
 import AccountLimit from "./Pages/AccountLimit";
 import NotificationSettings from "./Pages/NotificationSettings";
 import PersonalInformation from "./Pages/PersonalInformation";
+import SavedCards from "./Pages/SavedCards";
 import Security from "./Pages/Security";
+import Support from "./Pages/Support";
 
 export default function PillaSettings() {
   const [pageName, setPageName] = useState("Personal information");
@@ -31,6 +33,14 @@ export default function PillaSettings() {
       name: "Security",
       component: <Security pageName={pageName} getTitleName={getTitleName}/>,
     },
+    {
+      name: "Saved Cards",
+      component: <SavedCards pageName={pageName} getTitleName={getTitleName}/>,
+    },
+    {
+      name: "Support",
+      component: <Support pageName={pageName} getTitleName={getTitleName}/>,
+    },
   ];
 
   return (
@@ -38,7 +48,7 @@ export default function PillaSettings() {
       <div className="d-none d-lg-inline-block w-100">
         <div className="row gx-5">
           <div className="col-4">
-            <Container Wrapper={"h-100"}>
+            <Container Wrapper={"h-100 border-0"} >
               {SettingData()?.map(({ name,titleName, action }, i) => (
                 <div
                   className={`d-flex justify-content-between font-2 align-items-center pt-3 pb-4 ps-4 ${
@@ -60,15 +70,15 @@ export default function PillaSettings() {
                   </div>
                 </div>
               ))}
-               <Spacer  ReUsableStyle={{height:'15vh'}} />
+               <Spacer  ReUsableStyle={{height:'40vh'}} />
             </Container>
           </div>
           <div className={`col-8 `} >
-            <Container   Wrapper={`h-100 `}>
+            <Container   Wrapper={`h-100 border-0`}>
               <Spacer SpacerClassName="py-2" />
              
               <PageSwitch pageArray={usePage} pageName={pageName} />
-             
+           
             </Container>
           </div>
         </div>

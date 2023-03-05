@@ -3,50 +3,50 @@ import { RiErrorWarningFill } from "react-icons/ri"
 export const SideBarData = [
     {
         name:'Home',
-        icon1:'/Images/SideBar/home.svg',
-        icon2:'/Images/SideBar/homea.svg',
+        icon1:'/Images/SideBar/home.png',
+        icon2:'/Images/SideBar/home1.png',
         activeNo:1,
         path:'/'
     },
     {
         name:'Pilla Card',
-        icon1:'/Images/SideBar/2a.svg',
-        icon2:'/Images/SideBar/1.png',
+        icon1:'/Images/SideBar/card1.png',
+        icon2:'/Images/SideBar/card.png',
         activeNo:2,
         path:'/card'
     },
     {
         name:'Pilla Savings',
-        icon1:'/Images/SideBar/2a.svg',
-        icon2:'/Images/SideBar/2.png',
+        icon1:'/Images/SideBar/saving1.png',
+        icon2:'/Images/SideBar/saving.png',
         activeNo:3,
         path:'/savings'
     },
     {
         name:'Pilla Finance',
-        icon1:'/Images/SideBar/2a.svg',
-        icon2:'/Images/SideBar/3.svg',
+        icon1:'/Images/SideBar/finance1.png',
+        icon2:'/Images/SideBar/finance.png',
         activeNo:4,
         path:'/finance'
     },
     {
         name:'Pilla Insure',
-        icon1:'/Images/SideBar/2a.svg',
-        icon2:'/Images/SideBar/4.svg',
+        icon1:'/Images/SideBar/insure.png',
+        icon2:'/Images/SideBar/insure1.png',
         activeNo:5,
         path:'/insure'
     },
     {
         name:'Pilla Crypto',
-        icon1:'/Images/SideBar/2a.svg',
+        icon1:'/Images/SideBar/crypto2.png',
         icon2:'/Images/SideBar/5.svg',
         activeNo:6,
         path:'/crypto'
     },
     {
         name:'Settings',
-        icon1:'/Images/SideBar/2a.svg',
-        icon2:'/Images/SideBar/6.svg',
+        icon1:'/Images/SideBar/setting2.png',
+        icon2:'/Images/SideBar/setting1.png',
         activeNo:7,
         path:'/settings'
     },

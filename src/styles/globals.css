@@ -21,6 +21,7 @@
  --success:#159F00;
  --successI:#0FBE00;
  --pending:#00AA96;
+ --blue:#0024A8;
 }
 
 body{
@@ -144,6 +145,9 @@ input{
 }
 .pending{
   color: var(--pending);
+}
+.blue{
+  color: var(--blue) !important;
 }
 
 /* Background Color */
