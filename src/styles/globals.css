@@ -13,6 +13,7 @@
  --grayII:#4D4D4D;
  --grayIII:#F2F2F2;
  --grayIV:#666666;
+ --grayV:#B3B3B3;
  --black:#00061A;
  --blackI:#1A1A1A;
  --blackII:#333333;
@@ -113,6 +114,7 @@ input{
 .grayIV{
   color: var(--grayIV);
 }
+
 .black{
   color: var(--black);
 }
@@ -170,7 +172,9 @@ input{
 .bg-blackII{
   background-color: var(--blackII);
 }
-
+.bg-grayV{
+  background-color: var(--grayV);
+}
 
 /*  */
 

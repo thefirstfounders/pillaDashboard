@@ -2,20 +2,20 @@ import React from "react";
 import { Form } from "react-bootstrap";
 import styled from "styled-components";
 
-export default function SwitchInput({bgColor}) {
+export default function SwitchInput({bgColor,width,height,checked}) {
   return (
-    <SwitchInputStyled bgColor={bgColor}>
-      <Form.Check type="switch" id="custom-switch" />
+    <SwitchInputStyled bgColor={bgColor} Width={width} Height={height}>
+      <Form.Check checked={checked} type="switch" id="custom-switch" />
     </SwitchInputStyled>
   );
 }
 
 const SwitchInputStyled = styled.span`
 .form-switch .form-check-input {
-  width: 3em !important;
+  width:  ${props=>props?.Width?props?.Width:'3em'}  !important;
 }
 .form-check-input {
-  height: 1.4em !important;
+  height:  ${props=>props?.Height?props?.Height:'1.4em'} !important;
 }
 
 .form-check-input:checked {
