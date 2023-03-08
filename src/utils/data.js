@@ -54,59 +54,75 @@ export const SideBarData = [
 ]
 export const SideBarBusinessData = [
     {
-        name:'Dashboard',
-        icon1:'/Images/SideBar/home.png',
-        icon2:'/Images/SideBar/home1.png',
+        name:'Get Started',
+        icon1:'/Images/SideBar/gettingStarted.png',
+        icon2:'/Images/SideBar/verification.png',
         activeNo:1,
-        path:'/business'
+        path:'/business/',
+        type:true
+    },
+    {
+        name:'Verification',
+        icon1:'/Images/SideBar/verification.png',
+        icon2:'/Images/SideBar/gettingStarted.png',
+        activeNo:2,
+        path:'/business/verification',
+        type:true
+    },
+    {
+        name:'Dashboard',
+        icon1:'/Images/SideBar/home1.png',
+        icon2:'/Images/SideBar/home.png',
+        activeNo:3,
+        path:'/business/'
     },
     {
         name:'Pilla Account',
-        icon1:'/Images/SideBar/card1.png',
+        icon1:'/Images/SideBar/account1.png',
         icon2:'/Images/SideBar/account.png',
-        activeNo:2,
+        activeNo:4,
         path:'/business/account'
     },
     {
         name:'Pilla Card',
         icon1:'/Images/SideBar/saving1.png',
         icon2:'/Images/SideBar/cardB.png',
-        activeNo:3,
+        activeNo:5,
         path:'/business/savings'
     },
     {
         name:'Pilla Savings',
         icon1:'/Images/SideBar/saving1.png',
         icon2:'/Images/SideBar/savingB.png',
-        activeNo:3,
+        activeNo:6,
         path:'/business/savings'
     },
     {
         name:'Pilla Insure',
         icon1:'/Images/SideBar/insure.png',
         icon2:'/Images/SideBar/insureB.png',
-        activeNo:5,
+        activeNo:7,
         path:'/business/insure'
     },
     {
         name:'Pilla Crypto',
         icon1:'/Images/SideBar/crypto2.png',
         icon2:'/Images/SideBar/cryptoB.png',
-        activeNo:6,
+        activeNo:8,
         path:'/business/crypto'
     },
     {
         name:'Pilla Finance',
         icon1:'/Images/SideBar/finance1.png',
         icon2:'/Images/SideBar/financeB.png',
-        activeNo:4,
+        activeNo:9,
         path:'/business/finance'
     },
     {
         name:'Payment Link',
         icon1:'/Images/SideBar/finance1.png',
         icon2:'/Images/SideBar/linkB.png',
-        activeNo:4,
+        activeNo:10,
         path:'/business/finance'
     },
    
@@ -115,7 +131,7 @@ export const SideBarBusinessData = [
         name:'Settings',
         icon1:'/Images/SideBar/setting2.png',
         icon2:'/Images/SideBar/settingB.png',
-        activeNo:7,
+        activeNo:11,
         path:'/business/settings'
     },
     

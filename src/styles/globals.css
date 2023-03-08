@@ -21,6 +21,7 @@
  --dark:#2D2D3D;
  --success:#159F00;
  --successI:#0FBE00;
+ --successII:#00665A;
  --pending:#00AA96;
  --blue:#0024A8;
 }
@@ -48,7 +49,7 @@ input{
   font-size: 20px !important;
 }
 .h4t{
-  font-size: 18px;
+  font-size: 18px !important;
 }
 .h5t{
   font-size: 16px !important;
@@ -109,7 +110,7 @@ input{
   color: var(--grayI);
 }
 .grayII{
-  color: var(--grayII);
+  color: var(--grayII) !important;
 }
 .grayIV{
   color: var(--grayIV);
@@ -142,6 +143,9 @@ input{
 .successI{
   color: var(--successI);
 }
+.successII{
+  color: var(--successII) !important;
+}
 .primaryDark{
   color: var(--primaryDark);
 }
@@ -151,6 +155,7 @@ input{
 .blue{
   color: var(--blue) !important;
 }
+
 
 /* Background Color */
 
@@ -174,6 +179,9 @@ input{
 }
 .bg-grayV{
   background-color: var(--grayV);
+}
+.bg-successI{
+  background-color: var(--success) !important;
 }
 
 /*  */

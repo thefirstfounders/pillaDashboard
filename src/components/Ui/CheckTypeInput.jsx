@@ -6,7 +6,7 @@ export default function CheckTypeInput({size,CheckTypeInputClassName,name,type='
   return (
     <CheckTypeInputStyled Size={size}>
          <Form.Group className="" controlId="formBasicCheckbox">
-        <Form.Check type={type} name={name} className={CheckTypeInputClassName} checked={checked}/>
+        <Form.Check type={type} name={name} className={`${CheckTypeInputClassName} m-0 p-0`} checked={checked}/>
       </Form.Group>
     </CheckTypeInputStyled>
   )
@@ -18,6 +18,7 @@ input{
     width: ${props=>props?.Size?props?.Size:'20px'};
     height: ${props=>props?.Size?props?.Size:'20px'};
     outline:none !important;
+    margin:0 !important;
 }
 // .form-check-input:checked {
 //     background-color: #0d6efd;

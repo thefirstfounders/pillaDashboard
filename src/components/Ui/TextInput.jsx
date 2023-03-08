@@ -5,21 +5,25 @@ import styled from "styled-components";
 
 export default function TextInput({
   suffixIcon,
+  suffixIconStyle,
   prefixIcon,
   placeholder,
   type,
   label,
+  labelClassName,
+  labelColor,
+  required,
   ...props
 }) {
   const [isPassword, setIsPassword] = useState(false);
   return (
-    <TextInputStyled>
+    <TextInputStyled suffixIcon={suffixIcon}>
       {label && (
         <label
-          className="mb-2 h6t font-2"
-          style={{ color: " #333333", fontWeight: "500" }}
+          className={`${labelClassName || ' h6t mb-2'} font-2 `}
+          style={{ color: labelColor?labelColor:" #333333", fontWeight: "500" }}
         >
-          {label || "Target Amount"}
+          {label || "Target Amount"} {required && <span className="text-danger">*</span>}
         </label>
       )}
       <InputGroup className="">
@@ -37,7 +41,7 @@ export default function TextInput({
           (type === "password" && (
             <InputGroup.Text
               id="basic-addon1"
-              style={{ backgroundColor: "transparent" }}
+              style={{ backgroundColor: "transparent",...suffixIconStyle }}
               onClick={()=>setIsPassword(!isPassword)}
             >
               {type === "password" ? (
@@ -62,5 +66,6 @@ const TextInputStyled = styled.span`
     border: 1px solid #e6e6e6;
     border-radius: 8px;
     background: #f2f2f2;
+    border: ${props=>props?.suffixIcon?'none':''};
   }
 `;

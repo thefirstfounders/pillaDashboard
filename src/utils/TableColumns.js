@@ -269,3 +269,88 @@ export const CryptoTransactionsHeader = (TableDropDown) => {
    
   ];
 };
+
+
+
+export const AccountingTransactionsData = [
+  {
+    name: "BTC Recieved",
+    date: "Aug 14 2022",
+    status: "Success",
+    amount: "0.0001234",
+    transId:'ID-HGYG127631'
+  },
+  {
+    name: "Debit",
+    date: "Aug 14 2022 ",
+    status: "Pending",
+    amount: "0.0001234",
+    transId:'ID-HGYG127631'
+  },
+];
+export const AccountingTransactionsHeader = (TableDropDown) => {
+  return [
+    {
+      name: "Type",
+      selector: (row) => (
+        <div className="d-flex align-items-center gap-3">
+          <div className="">
+            {row?.status.toLowerCase() === "success" ? (
+              <FallbackImage
+                src="/Images/Icon/credit1.png"
+                width={24}
+                height={24}
+              />
+            ) : (
+              <FallbackImage
+                src="/Images/Icon/debit1.png"
+                width={24}
+                height={24}
+              />
+            )}
+          </div>
+          <div className=" black mb-0 h6tt">{row?.name}</div>
+        </div>
+      ),
+         width:'190px'
+    },
+    {
+      name: "Transaction ID",
+      selector: (row) => (
+        <div
+          className={``}
+        >
+          <div className=" h6tt text-start">{row?.transId}</div>
+        </div>
+      ),
+    },
+    {
+      name: "Amount",
+      selector: (row) => (
+        <div
+          className={``}
+        >
+          <div className=" h6tt text-start">{row?.amount}</div>
+        </div>
+      ),
+    },
+    {
+      name: <div>Date</div>,
+      selector: (row) => (
+        <div className="black">
+          <div className="mb-0 h6tt font-2 fw-normal ">{row?.date}</div>
+        </div>
+      ),
+      //   width:'230px'
+    },
+    {
+      name: "Status",
+      selector: (row) => (
+        <div className={`${row?.status==='Pending'?'pending':'text-success'}`}>
+          <div className="mb-0 font-2 fw-normal h6tt">{row?.status}</div>
+        </div>
+      ),
+    },
+   
+  ];
+};

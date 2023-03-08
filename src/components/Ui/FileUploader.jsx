@@ -2,7 +2,7 @@ import  {useCallback, useState} from 'react'
 import { Form, Spinner } from 'react-bootstrap'
 import {useDropzone} from 'react-dropzone'
 
-export const FileUploaderComp =({bodyText,LabelText,labelClassName,onChange,errors,required})=> {
+export const FileUploaderComp =({bodyText,LabelText,labelClassName,onChange,errors,required,labelColor})=> {
   const [loading,setLoading] =useState();  
   const onDrop = useCallback(acceptedFiles => {
       
@@ -67,11 +67,14 @@ export const FileUploaderComp =({bodyText,LabelText,labelClassName,onChange,erro
 
   return (
     <div>
-     <div>
-     {LabelText && <Form.Label className={labelClassName}>{LabelText }
-     
-     {required && <span className="text6">*</span>}</Form.Label>}
-     </div>
+     {LabelText && (
+        <label
+          className={`${labelClassName || ' h6t mb-2'} font-2 `}
+          style={{ color: labelColor?labelColor:" #333333", fontWeight: "500" }}
+        >
+          {LabelText} {required && <span className="text-danger">*</span>}
+        </label>
+      )}
           <div {...getRootProps()}>
       <input {...getInputProps()} />
       {

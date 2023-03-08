@@ -8,7 +8,10 @@ export default function SelectInput({
   type,
   label,
   handleChange={},
-  selectedOption=[]
+  selectedOption=[],
+  labelClassName,
+  required,
+  labelColor,
 }) {
   const animatedComponents = makeAnimated();
 
@@ -16,10 +19,10 @@ export default function SelectInput({
     <TextInputStyled>
       {label && (
         <label
-          className="mb-2 h6t font-2"
-          style={{ color: " #333333", fontWeight: "500" }}
+          className={`${labelClassName || ' h6t mb-2'} font-2 `}
+          style={{ color: labelColor?labelColor:" #333333", fontWeight: "500" }}
         >
-          {label || "Target Amount"}
+          {label || "Target Amount"} {required && <span className="text-danger">*</span>}
         </label>
       )}
       <Select

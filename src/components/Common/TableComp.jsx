@@ -17,11 +17,12 @@ export const TableCompData = ({
   setIsSelected = {},
   message,
   marginBottom,
-  noHeader=false
+  noHeader=false,
+  HeaderBackgroundColor,
 }) => {
   
   return (
-    <Style MarginBottom={marginBottom} showHeader={noHeader}>
+    <Style MarginBottom={marginBottom} showHeader={noHeader} HeaderBackgroundColor={HeaderBackgroundColor}>
       
         <DataTable
           responsive={true}
@@ -53,10 +54,10 @@ const Style = styled.div`
 
  
   .rdt_TableHeadRow {
-    font-size: 12px !important;
+    font-size: 14px !important;
     color: #000;
     font-weight: 600;
-    background:transparent;
+    background: ${props=>props?.HeaderBackgroundColor?props.HeaderBackgroundColor:'transparent'};
      border-start-end-radius: 10px;
      border-start-start-radius: 10px;
     border-bottom:none;
