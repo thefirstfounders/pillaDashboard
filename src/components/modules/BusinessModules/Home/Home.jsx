@@ -2,10 +2,12 @@ import FallbackImage from "@/components/Common/ImageWrapper";
 import ButtonComp from "@/components/Ui/Button";
 import Container from "@/components/Ui/Container";
 import TextInput from "@/components/Ui/TextInput";
+import { useRouter } from "next/router";
 import React from "react";
 import { BiChevronRight } from "react-icons/bi";
 import {MdChevronRight} from 'react-icons/md'
 export default function Home() {
+  const router =useRouter()
   return (
     <section>
       <section className="d-flex justify-content-center">
@@ -133,6 +135,7 @@ export default function Home() {
         <p className="grayII fw-normal text-center">Find answers to questions you <br/> might have or get in touch</p>
         <p className="grayII fw-normal text-center"></p>
         <ButtonComp
+        onClick={()=>router.push('/business/verification')}
         btnText={<span className="h5t text-black">Go to Support<span className="ms-2"><MdChevronRight size={20}/></span></span>}
         />
       </section>

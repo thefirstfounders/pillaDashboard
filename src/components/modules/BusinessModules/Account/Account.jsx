@@ -68,7 +68,7 @@ export default function Account() {
       </section>
 
       <section>
-        <Container Wrapper={'border-1'}  WrapperStyle={{border:"1px solid #E6E6E6"}}>
+        <Container Wrapper={'border-1 bg-white'}  WrapperStyle={{border:"1px solid #E6E6E6"}}>
           <div className="d-flex justify-content-between mb-3">
             <div className="h5t grayIV">Transactions</div>
             <div>
