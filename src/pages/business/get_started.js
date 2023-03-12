@@ -1,11 +1,11 @@
-import HomeComp from '@/components/modules/BusinessModules/DashBoard/Home'
+import Home from '@/components/modules/BusinessModules/Home/Home'
 import BusinessAccountLayout from '@/Layout/BusinessAccountLayout'
 import React from 'react'
 
 export default function index() {
   return (
-    <BusinessAccountLayout active={3}>
-      <HomeComp/>
+    <BusinessAccountLayout active={1}>
+      <Home/>
     </BusinessAccountLayout>
   )
 }

@@ -58,20 +58,20 @@ export const SideBarBusinessData = [
         icon1:'/Images/SideBar/gettingStarted.png',
         icon2:'/Images/SideBar/verification.png',
         activeNo:1,
-        path:'/business/',
+        path:'/business/get_started',
         type:true
     },
     {
         name:'Verification',
-        icon1:'/Images/SideBar/verification.png',
-        icon2:'/Images/SideBar/gettingStarted.png',
+        icon1:'/Images/SideBar/verification1.png',
+        icon2:'/Images/SideBar/verification.png',
         activeNo:2,
         path:'/business/verification',
         type:true
     },
     {
         name:'Dashboard',
-        icon1:'/Images/SideBar/home1.png',
+        icon1:'/Images/SideBar/home2.png',
         icon2:'/Images/SideBar/home.png',
         activeNo:3,
         path:'/business/'

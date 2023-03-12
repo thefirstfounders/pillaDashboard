@@ -253,3 +253,21 @@ border-radius: 4px;
     font-size: 18px !important;
   }
 }
+
+.overlay{
+  background: url('../../public//Images/Home/background.png'),#66FFED;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+/* .overlay::before{
+  background-color: #66FFED;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: 0;
+} */

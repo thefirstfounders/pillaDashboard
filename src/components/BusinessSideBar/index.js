@@ -45,7 +45,7 @@ const router =useRouter()
                 width={20}
                 height={20}
                 />
-                <div className='h5t grayII font-3'>{name}</div>
+                <div className={`h5t  font-3 ${active === activeNo ?'successII':'grayII'}`}>{name}</div>
             </div></Link>
             )}
         </div>

@@ -2,7 +2,7 @@ import FallbackImage from "@/components/Common/ImageWrapper";
 import ButtonComp from "@/components/Ui/Button";
 import React from "react";
 
-export default function ButtonAction({ btnText,onClick, Image,btnWrapper,BtnActionStyle,btnTextClassName,bg,border }) {
+export default function ButtonAction({ btnText,onClick, Image,btnWrapper,BtnActionStyle,btnTextClassName,bg,border,action }) {
   return (
     <div className={`${btnWrapper || 'col-6 col-lg-3'}`}>
       <ButtonComp
