@@ -90,7 +90,7 @@ export default function Pilla_Card() {
           </div>
         </div>
         <div className="col-lg-6 col-xl-8">
-          {false ? (
+          {true ? (
             <CardEmptyState />
           ) : (
             <div className="card border-0 h-100">

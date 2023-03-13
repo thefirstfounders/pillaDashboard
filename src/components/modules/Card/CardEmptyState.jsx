@@ -5,7 +5,7 @@ export default function CardEmptyState() {
   return (
     <div
             className="d-flex justify-content-center flex-column align-items-center animate__bounceIn animate__animated"
-            style={{ minHeight: "85vh" }}
+            style={{ minHeight: "45vh" }}
           >
             <div className="mb-4">
               <FallbackImage

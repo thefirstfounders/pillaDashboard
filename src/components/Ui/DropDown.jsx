@@ -10,7 +10,7 @@ export default function DropDown({ title, arrayComp,DropDownClassName }) {
           {title}<HiOutlineChevronDown/>
         </Dropdown.Toggle>
 
-        <Dropdown.Menu>
+        <Dropdown.Menu className="h6tt font-3">
           <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
           <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
           <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>

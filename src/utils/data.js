@@ -56,7 +56,7 @@ export const SideBarBusinessData = [
     {
         name:'Get Started',
         icon1:'/Images/SideBar/gettingStarted.png',
-        icon2:'/Images/SideBar/verification.png',
+        icon2:'/Images/SideBar/gettingStarted1.png',
         activeNo:1,
         path:'/business/get_started',
         type:true
@@ -88,7 +88,7 @@ export const SideBarBusinessData = [
         icon1:'/Images/SideBar/saving1.png',
         icon2:'/Images/SideBar/cardB.png',
         activeNo:5,
-        path:'/business/savings'
+        path:'/business/card'
     },
     {
         name:'Pilla Savings',

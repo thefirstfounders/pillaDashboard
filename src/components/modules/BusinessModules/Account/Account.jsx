@@ -58,6 +58,7 @@ export default function Account() {
         <div className="row gy-3 gy-lg-4 gx-3 gx-lg-5">
           {BtnActionHome(setPageName)?.map(({ name, image, action }, index) => (
             <ButtonAction
+            btnTextClassName={'py-2'}
               BtnActionStyle={{ padding: "10px 0" }}
               key={index}
               btnText={name}
