@@ -4,11 +4,12 @@ import PageSwitch from "@/components/Common/PageSwitch";
 import Spacer from "@/components/Common/Spacer";
 import { TableCompData } from "@/components/Common/TableComp";
 import ButtonComp from "@/components/Ui/Button";
+import Container from "@/components/Ui/Container";
 import SwitchInput from "@/components/Ui/SwitchInput";
 import { Data1, TransactionsHeader, TransactionsHeader1 } from "@/utils/TableColumns";
 import React, { useState } from "react";
 import { Form } from "react-bootstrap";
-import ButtonAction from "../Home/ButtonAction";
+import ButtonAction from "../../Home/ButtonAction";
 import AtmCard from "./AtmCard";
 import CardDetails from "./CardDetails";
 import CardEmptyState from "./CardEmptyState";
@@ -51,9 +52,9 @@ export default function Pilla_Card() {
     <section className="pb-5">
       <div className="row gx-4">
         <div className="col-lg-6 col-xl-4">
-          <div className="card border-0 " style={{ minHeight: "85vh" }}>
+        <Container Wrapper={'border rounded1 min-vh-100'}>
             <Spacer SpacerClassName="py-3" />
-            <section className="card-body font-1">
+            <section className=" font-1">
               <TopButtons setCard={setCard} getCard={getCard} />
 
               <div className="mb-3">
@@ -65,7 +66,8 @@ export default function Pilla_Card() {
                   btnWrapper={"col-12 h-100 "}
                 />
               </div>
-              <div
+              {false && <div>
+                <div
                 className=" rounded  mb-5"
                 style={{ background: "#E6E6E6", padding: "8px" }}
               >
@@ -85,12 +87,13 @@ export default function Pilla_Card() {
                   icon
                 />
               </div>
+                </div>}
               <Spacer ReUsableStyle={{ height: "20vh" }} />
             </section>
-          </div>
+            </Container>
         </div>
         <div className="col-lg-6 col-xl-8">
-          {false ? (
+          {true ? (
             <CardEmptyState />
           ) : (
             <div className="card border-0 h-100">

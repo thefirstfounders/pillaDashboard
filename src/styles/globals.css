@@ -101,7 +101,7 @@ input{
 /* Color */
 
 .danger{
-  color: var(--danger);
+  color: var(--danger) !important;
 }
 .gray{
   color: var(--gray) !important;

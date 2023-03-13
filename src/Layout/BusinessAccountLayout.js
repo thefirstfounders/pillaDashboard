@@ -66,7 +66,7 @@ export default function BusinessAccountLayout({
                     </span>
                   </div>
                   <div className="d-flex justify-content-between align-items-center">
-                    <div className="me-3 d-flex gap-2 align-items-center px-4 py-2 primaryII rounded-pill">
+                    <div className="me-2 me-lg-3 d-flex gap-2 align-items-center px-2  px-lg-4 py-2 primaryII rounded-pill">
                       <SwitchInput
                         checked={true}
                         width={"1.8rem"}
@@ -91,7 +91,7 @@ export default function BusinessAccountLayout({
                       </span>
                     </button>
                     <div
-                      className=" bg-black mx-4"
+                      className=" bg-black mx-3 mx-lg-4"
                       style={{ height: "30px", width: "2px" }}
                     ></div>
                     <div className="d-flex gap-1 align-items-center">

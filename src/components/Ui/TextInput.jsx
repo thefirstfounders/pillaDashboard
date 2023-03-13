@@ -46,9 +46,9 @@ export default function TextInput({
             >
               {type === "password" ? (
                 isPassword ? (
-                  <AiOutlineEye size={25} />
+                  <AiOutlineEye size={20} />
                 ) : (
-                  <AiOutlineEyeInvisible size={25} />
+                  <AiOutlineEyeInvisible size={20} />
                 )
               ) : (
                 suffixIcon

@@ -47,7 +47,7 @@ export default function RentSavingPage() {
     },
     {
       name: "Message",
-      component: <Message title={messagePageTitle||"Money Save"} desc="Successful" btnBG="#00AA96"/>,
+      component: <Message title={messagePageTitle||"Money Save"} desc="Successful" btnBG="#00AA96" onNext={()=>setPageName()}/>,
     },
   ];
 

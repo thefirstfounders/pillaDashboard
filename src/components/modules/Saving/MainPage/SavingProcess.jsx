@@ -15,7 +15,7 @@ import Progress from '../Progress'
 import Review from '../SavingProcess/Review'
 import TargetAmount from '../SavingProcess/TargetAmount'
 
-export default function SavingProcess() {
+export default function SavingProcess({setPageName1}) {
     const [pageName,setPageName] =useState('TargetAmount')
 
     const usePage =[
@@ -45,7 +45,7 @@ export default function SavingProcess() {
         },
         {
             name:'Message',
-            component:<Message btnBG='#00AA96' title='Congratulations' desc='You have started your financial goal journey'/>
+            component:<Message btnBG='#00AA96' title='Congratulations' desc='You have started your financial goal journey'  onNext={()=>setPageName1()}/>
             
         },
     ]
