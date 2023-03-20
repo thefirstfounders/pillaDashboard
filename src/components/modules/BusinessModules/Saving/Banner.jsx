@@ -9,9 +9,10 @@ export default function Banner({
   icon,
   bgColor,
   BannerClassName,
+  containerWrapper
 }) {
   return (
-    <div className={`col-lg-6 `}>
+    <div className={containerWrapper|| 'col-lg-6'}>
       <div
         style={{ backgroundColor: bgColor||'',border:'2px solid #E6E6E6' }}
         className={`d-flex justify-content-between align-items-center  rounded1 py-2 px-3 px-lg-4 ${BannerClassName} h-100`}

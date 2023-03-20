@@ -12,15 +12,18 @@ export const SettingData = () => {
     },
     {
       name: "Settlement Account",
+      titleName:'Settlement Account',
       action: () => {},
     },
    
     {
       name: "API Keys & Webhook",
+      titleName:'API Keys & Webhook',
       action: () => {},
     },
     {
       name: "Preferences",
+      titleName:'Preferences',
       action: () => {},
     },
     {
@@ -35,6 +38,7 @@ export const SettingData = () => {
     },
     {
       name: "Support",
+      titleName:'Support',
       action: () => {},
     },
 

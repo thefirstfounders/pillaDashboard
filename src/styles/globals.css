@@ -30,12 +30,16 @@ body{
     font-family: "Noto Sans", sans-serif !important;
 }
 
+a{
+  text-decoration: none !important;
+}
+
 h1,h2,h3,h4,h5,h6{
   font-family: "Space Grotesk", sans-serif !important;
 
 }
 
-input{
+input,textarea{
   outline: none !important;
   box-shadow: none !important;
   font-family: "Poppins", sans-serif !important;
@@ -94,6 +98,7 @@ input{
 .rounded1{
   border-radius: 13px !important;
 }
+
 /* .rounded2{
   border-radius: 13px !important;
 } */

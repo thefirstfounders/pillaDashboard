@@ -9,6 +9,7 @@ export default function MoneyInput({
   label,
   CurrencyInputClassName,
   Extra,
+  required,
 }) {
   return (
     <CurrencyInputStyled className={CurrencyInputClassName}>
@@ -20,7 +21,7 @@ export default function MoneyInput({
           >
             {label || "Target Amount"}
           </label>
-          <div>{Extra}</div>
+          <div>{Extra} {required && <span className="text-danger">*</span>}</div>
         </div>
       )}
       <CurrencyInput

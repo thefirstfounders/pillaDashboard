@@ -4,7 +4,7 @@ import React from "react";
 
 export default function ButtonAction({ btnText,onClick, Image,btnWrapper,BtnActionStyle,btnTextClassName,bg,border,action }) {
   return (
-    <div className={`${btnWrapper || 'col-6 col-lg-3'}`}>
+    <div className={`${btnWrapper || 'col-md-6 col-lg-3'}`}>
       <ButtonComp
       onClick={onClick}
         btnStyle={{ border: border||"2px solid #E6E6E6",...BtnActionStyle }}

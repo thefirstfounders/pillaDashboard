@@ -5,7 +5,7 @@ import React from 'react'
 
 export default function Settings() {
   return (
-    <BusinessAccountLayout active={7} pageName={`Settings`}>
+    <BusinessAccountLayout active={11} pageName={`Settings`}>
         <PillaSettings/>
     </BusinessAccountLayout>
   )

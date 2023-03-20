@@ -1,10 +1,8 @@
-import FallbackImage from '@/components/Common/ImageWrapper'
-import Spacer from '@/components/Common/Spacer'
+
 import ButtonComp from '@/components/Ui/Button'
 import Container from '@/components/Ui/Container'
 import TextInput from '@/components/Ui/TextInput'
 import React from 'react'
-import ShowDetails from '../Personalnfo/ShowDetails'
 
 export default function PersonalInformation({pageName,getTitleName}) {
   return (

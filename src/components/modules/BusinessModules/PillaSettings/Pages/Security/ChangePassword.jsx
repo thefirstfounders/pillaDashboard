@@ -7,7 +7,7 @@ export default function ChangePassword({onNext}) {
   return (
     <section>
         <OffCanvasHeader
-        title={'ChangePassword'}
+        title={'Change Password'}
         />
 
         <section>

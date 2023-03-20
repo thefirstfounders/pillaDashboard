@@ -17,7 +17,7 @@ export default function BusinessAccountLayout({
   children,
   pageName = "",
 }) {
-  const [sideBarToggle, setSideBarToggle] = useState(false);
+  const [sideBarToggle, setSideBarToggle] = useState(true);
   let signUpToggleRef = useRef();
 
   useEffect(() => {
@@ -154,8 +154,10 @@ const UserLayoutStyled = styled.div`
   @media only screen and (max-width: 800px) {
     .main {
       margin-left: 0px;
+      
     }
     .side {
+      visibility: ${(props) => (props?.Toggle ? "visible" : "hidden")};;
       transition: all 0.5s;
       width: ${(props) => (props?.Toggle ? "250px" : "0px")};
       z-index: 89;

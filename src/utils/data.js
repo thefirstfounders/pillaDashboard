@@ -85,45 +85,45 @@ export const SideBarBusinessData = [
     },
     {
         name:'Pilla Card',
-        icon1:'/Images/SideBar/saving1.png',
+        icon1:'/Images/SideBar/cardA.png',
         icon2:'/Images/SideBar/cardB.png',
         activeNo:5,
         path:'/business/card'
     },
     {
         name:'Pilla Savings',
-        icon1:'/Images/SideBar/saving1.png',
+        icon1:'/Images/SideBar/savingA.png',
         icon2:'/Images/SideBar/savingB.png',
         activeNo:6,
         path:'/business/savings'
     },
     {
         name:'Pilla Insure',
-        icon1:'/Images/SideBar/insure.png',
+        icon1:'/Images/SideBar/insureA.png',
         icon2:'/Images/SideBar/insureB.png',
         activeNo:7,
         path:'/business/insure'
     },
     {
         name:'Pilla Crypto',
-        icon1:'/Images/SideBar/crypto2.png',
+        icon1:'/Images/SideBar/cryptoA.png',
         icon2:'/Images/SideBar/cryptoB.png',
         activeNo:8,
         path:'/business/crypto'
     },
     {
         name:'Pilla Finance',
-        icon1:'/Images/SideBar/finance1.png',
+        icon1:'/Images/SideBar/financeA.png',
         icon2:'/Images/SideBar/financeB.png',
         activeNo:9,
         path:'/business/finance'
     },
     {
         name:'Payment Link',
-        icon1:'/Images/SideBar/finance1.png',
+        icon1:'/Images/SideBar/linkC.png',
         icon2:'/Images/SideBar/linkB.png',
         activeNo:10,
-        path:'/business/finance'
+        path:'/business/payment_link'
     },
    
     

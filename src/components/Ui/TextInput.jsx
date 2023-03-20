@@ -12,6 +12,7 @@ export default function TextInput({
   label,
   labelClassName,
   labelColor,
+  inputClassName,
   required,
   ...props
 }) {
@@ -32,6 +33,7 @@ export default function TextInput({
         )}
         <Form.Control
           placeholder={placeholder}
+          className={`${inputClassName}`}
           aria-label="Username"
           aria-describedby="basic-addon1"
           type={type==="password"?isPassword?'text':'password':'text'}
@@ -46,9 +48,9 @@ export default function TextInput({
             >
               {type === "password" ? (
                 isPassword ? (
-                  <AiOutlineEye size={20} />
+                  <AiOutlineEye color="#999999" size={20} />
                 ) : (
-                  <AiOutlineEyeInvisible size={20} />
+                  <AiOutlineEyeInvisible color="#999999" size={20} />
                 )
               ) : (
                 suffixIcon
@@ -66,6 +68,7 @@ const TextInputStyled = styled.span`
     border: 1px solid #e6e6e6;
     border-radius: 8px;
     background: #f2f2f2;
-    border: ${props=>props?.suffixIcon?'none':''};
+  border: ${props=>props?.suffixIcon?'none':''};
+    // border-right: ${props=>props?.suffixIcon?'none':''};
   }
 `;

@@ -19,10 +19,11 @@ export const TableCompData = ({
   marginBottom,
   noHeader=false,
   HeaderBackgroundColor,
+  fontWeight,
 }) => {
   
   return (
-    <Style MarginBottom={marginBottom} showHeader={noHeader} HeaderBackgroundColor={HeaderBackgroundColor}>
+    <Style MarginBottom={marginBottom} showHeader={noHeader} HeaderBackgroundColor={HeaderBackgroundColor} fontWeight={fontWeight}>
       
         <DataTable
           responsive={true}
@@ -37,8 +38,7 @@ export const TableCompData = ({
           progressPending={progressPending}
           pointerOnHover
           noHeader={noHeader}
-          
-          persistTableHead={false}
+          persistTableHead={noHeader}
           noDataComponent={message?message:false}
 
           
@@ -56,7 +56,7 @@ const Style = styled.div`
   .rdt_TableHeadRow {
     font-size: 14px !important;
     color: #000;
-    font-weight: 600;
+    font-weight: ${props=>props?.fontWeight?props.fontWeight:'600'};
     background: ${props=>props?.HeaderBackgroundColor?props.HeaderBackgroundColor:'transparent'};
      border-start-end-radius: 10px;
      border-start-start-radius: 10px;

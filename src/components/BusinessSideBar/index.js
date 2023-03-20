@@ -10,7 +10,7 @@ const router =useRouter()
    
     
   return (
-    <section className='px-4'>
+    <section className='px-2 px-lg-4 bg-white'>
         <Spacer ReUsableStyle={{height:'30px'}} />
         {/*  */}
         <div >
@@ -26,7 +26,7 @@ const router =useRouter()
           
         </div>
         {/*  */}
-        <div className=' border-bottom pb-2'>
+        <div className=' border-bottom pb-2 '>
         <Spacer ReUsableStyle={{height:'40px'}} />
 
         {/* <div className='d-flex ps-3 align-items-center gap-2 primaryII py-2 mb-2'>
