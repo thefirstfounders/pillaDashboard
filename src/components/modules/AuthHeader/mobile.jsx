@@ -1,5 +1,5 @@
 import FallbackImage from "@/components/Common/ImageWrapper"
-import ButtonComp from "@/Components/Ui/Button"
+import ButtonComp from "@/components/Ui/Button"
 import Link from "next/link"
 import { BiMenuAltLeft, BiUserCircle } from "react-icons/bi"
 import { IoMdClose } from "react-icons/io"
