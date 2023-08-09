@@ -23,7 +23,7 @@ export default function PersonalInformation({pageName,getTitleName}) {
       <div className='col-12 g-4'>
         <TextInput
         label={'First Name'}
-        value={'Seun'}
+        value={'Seunh'}
         />
       </div>
       <div className='col-12 g-4'>
